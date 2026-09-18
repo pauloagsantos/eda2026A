@@ -28,7 +28,7 @@ public class Complex {
         i=b;
     } 
     
-    public double getParteReal() {
+    public double getRealPart() {
         // devolve a parte real do complexo
         return r;
         
