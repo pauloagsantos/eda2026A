@@ -1,5 +1,7 @@
 package ficha1;
 
+import java.math.BigInteger;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -28,6 +30,20 @@ public class Math {
             return 1;                      // 1
         else
             return num*factorialR(num-1);  // (1+1+1+1)*N = 4N
+    }
+    
+    public static BigInteger factorialBigI(int num) {
+        BigInteger f= BigInteger.ONE;                       
+        for(int i = 1; i <= num; i++) 
+            f =  f.multiply(BigInteger.valueOf(i));  
+        return f;                      
+    }
+    
+    public static BigInteger factorialBigR(int num) {
+        if (num == 0)                      
+            return BigInteger.ONE;                      
+        else
+            return factorialBigR(num-1).multiply(BigInteger.valueOf(num));  
     }
     
 }
