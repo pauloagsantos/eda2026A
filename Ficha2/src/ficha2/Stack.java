@@ -9,5 +9,8 @@ package ficha2;
  * @author IPT
  */
 public interface Stack {
-    
+    public boolean isEmpty(); 
+    public void push(Object item); 
+    public Object pop(); 
+    public Object peek(); 
 }
